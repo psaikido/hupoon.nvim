@@ -1,10 +1,11 @@
 # hupoon
 
-After 'harpoon' (https://github.com/ThePrimeagen/harpoon), a navigation utility that allows for user selected directories to be browsed and searched system wide.
+A navigation utility that allows for user selected directories to be browsed and searched system wide.  
+After 'harpoon' (https://github.com/ThePrimeagen/harpoon) 
 
 
 ## setup
-Packer
+Packer  
 `use {'psaikido/hupoon.nvim'}`
 
 init.lua:  
