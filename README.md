@@ -9,19 +9,19 @@ Packer
 
 init.lua:  
 
-`require('hupoon').setup({
-    selected_dirs = {
-        '~/.config',
-        '~/bin',
-        '~/code',
+`require('hupoon').setup({  
+    selected_dirs = {  
+        '~/.config',  
+        '~/bin',  
+        '~/code',  
     }
 })`
 
 
 ## keymaps
-`local hupoon = require("hupoon")
-vim.keymap.set('n', '<leader>h', hupoon.hupoon, {desc = "hupoon"})
-vim.keymap.set('n', '<leader>hh', hupoon.find_home, {desc = "Home Find"})
-vim.keymap.set('n', '<leader>hf', hupoon.find_here, {desc = "Here Find"})
-vim.keymap.set('n', '<leader>hp', hupoon.browse_proj, {desc = "Browse Project"})
-vim.keymap.set('n', '<leader>hb', hupoon.search_buffer, {desc = "Search Buffer"})`
+`local hupoon = require("hupoon")  
+vim.keymap.set('n', '<leader>h', hupoon.hupoon, {desc = "hupoon"})  
+vim.keymap.set('n', '<leader>hh', hupoon.find_home, {desc = "Home Find"})  
+vim.keymap.set('n', '<leader>hf', hupoon.find_here, {desc = "Here Find"})  
+vim.keymap.set('n', '<leader>hp', hupoon.browse_proj, {desc = "Browse Project"})  
+vim.keymap.set('n', '<leader>hb', hupoon.search_buffer, {desc = "Search Buffer"})`  
