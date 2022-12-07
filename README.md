@@ -20,8 +20,10 @@ require('hupoon').setup({
 })
 ```
 
+## command
+`:Hupoon`
 
-## keymaps
+## suggested keymaps
 ```lua
 local hupoon = require("hupoon")  
 vim.keymap.set('n', '<leader>h', hupoon.hupoon, {desc = "hupoon"})  
