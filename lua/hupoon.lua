@@ -7,11 +7,11 @@ local themes = require('telescope.themes')
 local actions = require "telescope.actions"
 local action_state = require "telescope.actions.state"
 
-M.setup = function(opts)
+function M.setup(opts)
     M.selected_dirs = opts['selected_dirs']
 end
 
-M.hupoon = function()
+function M.hupoon()
     local opts = opts or {}
     pickers.new(opts, {
         prompt_title = "hupoon",
@@ -50,7 +50,7 @@ M.hupoon = function()
 end
 
 
-M.find_home = function()
+function M.find_home()
     require('telescope.builtin').find_files {
         cwd = '~/',
         hidden = false,
@@ -60,7 +60,7 @@ M.find_home = function()
 end
 
 
-M.find_here = function()
+function M.find_here()
     require('telescope.builtin').find_files {
         cwd = '.',
         hidden = false,
@@ -70,12 +70,12 @@ M.find_here = function()
 end
 
 
-M.browse_proj = function()
+function M.browse_proj()
     require('telescope').extensions.file_browser.file_browser{}
 end
 
 
-M.search_buffer = function()
+function M.search_buffer()
     require("telescope.builtin").current_buffer_fuzzy_find()
 end
 
